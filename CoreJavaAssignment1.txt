@@ -1,0 +1,255 @@
+1)
+package com.sonata1;
+
+public class Question1 {
+	public static void main(String arg[])
+	{
+		int a = 12, b = 25, c = 89;
+		
+		if((a>b)&&(a>c)) // checking greater than between a and b and a and c
+			System.out.println("Greater Number is" + a);
+		else if((b>c)&&(b>a)) // checking greater than between b and c , b and a
+			System.out.println("Greater Number is" + b);
+		else
+			System.out.println("Greater Number is" + c);
+			
+	}
+
+}
+
+2)
+package com.sonata1;
+
+public class Question2 {
+	public static void main(String arg[])
+	{
+		int i;
+		
+		System.out.println("First 10 Natural Numbers:");
+		
+		for(i=1;i<=10;i++) // iterating until i less than or equal to 10
+		{
+			
+			System.out.println(i);
+		}
+			
+			
+	}
+
+}
+
+3)
+package com.sonata1;
+
+public class Question3 {
+	
+	public static void main(String arg[])
+	{
+		int i = 9;
+		
+		i = i*i*i; // cube root
+		
+		System.out.println(i);
+		
+	}
+
+}
+
+4)
+package com.sonata1;
+
+public class Question4
+{
+	public static void main(String arg[])
+	{
+		int arr[] = {1,2,3,4,5,6}, sum = 0,i;
+		
+		for(i =5;i>=0;i--) // checks i greater than 0 and then decrements the number
+		{
+			sum = sum + arr[i]; // it adds sum with arr[i] i.e 0+6
+		
+		}
+		
+		System.out.println(sum);
+		
+		
+		
+		
+		
+	}
+}
+
+5)
+package com.sonata1;
+
+public class Question5
+{
+	public static void main(String arg[]) 
+	{
+		int[] arr = {1,2,3,6};
+		int n = 3, i;
+		
+		for(i=0;i<arr.length;i++) // loop iterates
+			
+		{
+			if(n == arr[i]) // check n equal to arr[i]
+			{
+				System.out.println("contains the value");
+				
+			}
+		}	
+		
+		
+	}
+
+}
+
+6)
+package com.sonata1;
+
+
+public class Question6 
+{
+	public static void main(String arg[])
+	{
+		int arr[] = {3,4,5,6,7}, i;
+		
+		for( i=arr.length-1;i>=0;i--) 
+		{
+			
+		
+		System.out.print(arr[i]+ " ");
+	    }
+   }
+
+}
+
+7)
+package com.sonata1;
+
+public class Question7 {
+	
+	public static void main(String arg[])
+	{
+		
+		String s1="JaVAcOdE";
+		int len = s1.length();
+		String s2="";
+		int i;
+		char x;
+		for(i=0;i<=len-1;i++)
+		{
+			x=s1.charAt(i);
+			switch(x) {
+			case 'a':
+			case 'e':
+			case 'i':
+			case 'o':
+			case 'u':
+			case 'A':
+			case 'E':
+			case 'I':
+			case 'O':
+			case 'U':
+				s2=s2+'$';
+				break;
+				default:
+					s2=s2+x;
+		  }		
+				
+	  }
+		System.out.println(s2);
+	}
+
+}
+
+8)
+package com.sonata1;
+
+public class Question8 {
+	
+	public static void main(String arg[])
+	{
+		int arr[] = {11,33,11,44,55,66,55,33};
+		
+		System.out.println("Dublicate numbers are : ");
+		
+		for(int i=0;i<arr.length;i++)
+		{
+			for(int j=i+1;j<arr.length;j++)
+			{
+				if(arr[i]==arr[j])
+				{
+					System.out.print(arr[i] + " ");
+					
+				}
+			}
+		}
+		
+	}
+
+}
+
+9)
+package com.sonata1;
+
+public class Question9
+{
+	public static void main(String arg[])
+	{
+		int arr[] = {1,2,2,4,6,4,6,8,8}, count=0;
+		
+		for(int i=0;i<arr.length;i++)
+		{
+			for(int j=i+1;j<arr.length;j++)
+			{
+				if(arr[i]==arr[j])
+				{
+					count=count+1;
+					
+				}
+			}
+		}
+		System.out.print("dublicate numbers count is: " + count);
+	}
+
+
+}
+
+10)
+package com.sonata1;
+
+public class Question10 {
+
+	public static void main(String arg[])
+	{
+		int arr[] = {2,4,5,7,10},i,largest1, largest2, temp;
+		
+		largest1 = arr[0];
+		largest2 =arr[1];
+		
+		if(largest1 < largest2)
+		{
+			temp = largest1;
+			largest1 = largest2;
+			largest2 = temp;
+		}
+		
+		for(i=2; i<arr.length;i++)
+		{
+			if(arr[i]>largest1)
+			{
+				largest2 = largest1;
+				largest1 = arr[i];
+			}
+			else if(arr[i] > largest2 && arr[i]!=largest1)
+			{
+				largest2 = arr[i];
+			}
+		}
+		System.out.println("First largest: " + largest1);
+		System.out.println("second largest: " + largest2);
+	}
+}
+
+
