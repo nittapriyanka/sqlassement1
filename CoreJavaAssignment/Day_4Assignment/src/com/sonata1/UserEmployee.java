@@ -21,6 +21,7 @@ public class UserEmployee {
 		EmployeeImpI l1 = new EmployeeImpI();
 		l1.addEmployee(e);
 		l1.addEmployee(e1);
+		l1.yearSalary1(e1);
 		
 		System.out.println(l1.getEmployee());
 		l1.removeEmployee(e);
@@ -41,7 +42,8 @@ public class UserEmployee {
 		sall = sall*12;
 		System.out.println("yearly salary of employee e1  " + sall);
 		
-	}	
+		
 
+}
 }
 }

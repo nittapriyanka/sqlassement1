@@ -44,9 +44,17 @@ public class EmployeeImpI implements EmployeeInt {
 		return null;
 	}
 
+	public double yearSalary1(Employee e1) {
+		double yearsal = 0;
+		for(Employee e:l1)
+		{
+			yearsal = e.getEmpSalary()*12;
+			System.out.println(e+"  "+"Annual Sal "+yearsal);
 	
 	
 	
 	
-	
+}
+		return yearsal;
+}
 }

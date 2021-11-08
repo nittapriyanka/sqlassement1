@@ -10,7 +10,7 @@ public interface EmployeeInt {
 	
 	public void removeEmployee(Employee o);
 	
-	public double yearSalary(Employee e1);
+	public double yearSalary1(Employee l1);
 	
 	public List<Employee>getEmployee();
 
